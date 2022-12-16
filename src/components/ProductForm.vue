@@ -1,15 +1,15 @@
 <script setup>
 import { Form } from "ant-design-vue";
-import { reactive, onUpdated } from "vue";
+import { ref, onUpdated } from "vue";
 // validation form with useForm in  Form vue
 const useForm = Form.useForm;
-const formState = reactive({
+const formState = ref({
   name: "",
   price: "",
   city: "",
   refNumber: "",
 });
-const rulesRef = reactive({
+const rulesRef = ref({
   name: [
     {
       required: true,
@@ -19,7 +19,6 @@ const rulesRef = reactive({
   price: [
     {
       required: true,
-      type: Number,
       message: "Please input price",
     },
   ],
@@ -57,6 +56,7 @@ function createProduct() {
 }
 
 onUpdated(() => {
+  console.log(props.product);
   if (props.show && props.product) formState.value = props.product;
 });
 </script>

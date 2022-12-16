@@ -1,4 +1,3 @@
-</script>
 <script setup>
 import SearchInput from "./components/SearchInput.vue";
 import FilterProduct from "./components/FilterProduct.vue";

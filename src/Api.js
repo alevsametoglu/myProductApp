@@ -1,5 +1,13 @@
 import products from "./products.json";
-let data = [...products];
+import storageHelper from "./storageHelper";
+
+// get data from localStorage
+const localStorageData = storageHelper.getProductList();
+
+let data = localStorageData ? localStorageData : [...products];
+if (!localStorageData) storageHelper.saveProductList(data);
+// create api for getting data from json
+
 const Api = {
   getProductList: (query) => {
     console.log(query);

@@ -19,16 +19,16 @@ Filter the list by one or more city
 
 - [VS Code](https://code.visualstudio.com/)
 
-### Installing and launching front-end
+### Installing and launching
 
-clone the repository of MyProducts front-end:
+clone the repository of MyProducts :
 
 `git clone https://github.com/alevsametoglu/myProductApp.git`
 
 Inside this front-end repository, install dependencies:
 `npm install`
 
-Launch front-end on port 3001:
+Launch front-end on port 5173:
 
 `npm run dev`
 

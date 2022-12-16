@@ -6,14 +6,14 @@ The exercise consists in creating an interface to manage a list of products with
 ref, name, city, price
 
 Application to be able to :
-Consult the list of products with a pagination of 5 products per page
-Add new products
-Modify each product field
-Delete each product line
-Sort products by ref, name, city, price in ascending and descending order
-Filter the list by ref and / or name
-Filter the list by a range of price
-Filter the list by one or more city
+-Consult the list of products with a pagination of 5 products per page
+-Add new products
+-Modify each product field
+-Delete each product line
+-Sort products by ref, name, city, price in ascending and descending order
+-Filter the list by ref and / or name
+-Filter the list by a range of price
+-Filter the list by one or more city
 
 ## Recommended IDE Setup
 

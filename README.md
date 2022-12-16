@@ -1,7 +1,44 @@
-# Vue 3 + Vite
+# MyProducts
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is an interactive and ergonimic application for FRONTEND - Vue.js technical test – CRUD
+
+The exercise consists in creating an interface to manage a list of products with the following fields:
+ref, name, city, price
+
+Application to be able to :
+Consult the list of products with a pagination of 5 products per page
+Add new products
+Modify each product field
+Delete each product line
+Sort products by ref, name, city, price in ascending and descending order
+Filter the list by ref and / or name
+Filter the list by a range of price
+Filter the list by one or more city
 
 ## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [VS Code](https://code.visualstudio.com/)
+
+### Installing and launching front-end
+
+clone the repository of MyProducts front-end:
+
+`git clone https://github.com/alevsametoglu/myProductApp.git`
+
+Inside this front-end repository, install dependencies:
+`npm install`
+
+Launch front-end on port 3001:
+
+`npm run dev`
+
+Front-end is now rendered at URL `http://127.0.0.1:5173/`.
+
+## Dependencies
+
+| Name           | Version |
+| -------------- | ------- |
+| Vue            | 3.2.45  |
+| vite           | 4.0.0   |
+| ant-design-vue | 3.2.15  |
+| jsdoc -vuejs   | 4.0.0   |

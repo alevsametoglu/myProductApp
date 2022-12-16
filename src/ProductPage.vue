@@ -64,19 +64,19 @@ function editProduct(refNumber) {
 }
 
 function createUpdateProduct(product) {
-  console.log(product);
   state.showForm = false;
-  // console.log(product);
+
   if (!!state.selectedProduct) {
-    //TODO: update product
     Api.updateProduct(product);
+    const index = state.productList.findIndex(
+      (product) => product.refNumber === state.selectedProduct.refNumber
+    );
+    state.productList[index] = product;
 
     state.selectedProduct = undefined;
   } else {
-    //TODO:  create product
     Api.createProduct(product);
-    state.productList.push(product);
-    console.log(state.productList);
+    state.productList.push({ ...product });
   }
 }
 
@@ -127,7 +127,7 @@ onMounted(() => {
     />
     <ProductForm
       :show="state.showForm"
-      :product="state.selectedProduct"
+      :product="{ ...state.selectedProduct }"
       @close="closeForm"
       @submit="createUpdateProduct"
     />

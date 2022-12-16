@@ -1,3 +1,22 @@
+<script>
+/**
+ * Product item component
+  @vue-prop product fields
+   * @vue-prop {String} name -product name
+   * @vue-prop {String} city -product city
+   * @vue-prop {String} ref -product-refNumber
+   * @vue-prop {Number} price- product price
+
+   
+   * @vue-event { void} update - Emit modify product item 
+   * @vue-event { void}delete- Emit delete product item
+  
+
+   * 
+ *
+ */
+export default { name: "ProductItem" };
+</script>
 <script setup>
 import { Form } from "ant-design-vue";
 import { ref, onUpdated } from "vue";

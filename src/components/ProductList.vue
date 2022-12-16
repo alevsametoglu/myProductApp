@@ -1,3 +1,15 @@
+<script>
+/**
+ * Product list component
+ * @vue-prop {Array} products -products Array
+ * @vue-event  deleteProduct - Emit delete product item from list
+ * @vue-event  updateProduct - Emit Modify product item
+ *
+ *
+ */
+export default { name: "ProductList" };
+</script>
+
 <script setup>
 import ProductItem from "./ProductItem.vue";
 

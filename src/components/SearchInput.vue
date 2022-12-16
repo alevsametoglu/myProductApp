@@ -1,3 +1,12 @@
+<script>
+/**
+ * SearchInput component
+ * @vue-event { void} change - Emit search product
+ *
+ *
+ */
+export default { name: "SearchInput" };
+</script>
 <script setup>
 import { ref } from "vue";
 //declared search query param with ref

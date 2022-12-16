@@ -1,3 +1,13 @@
+<script>
+/**
+ * Sort product component
+ * @vue-event { void} sort - Emit sort products
+ *
+ *
+ */
+export default { name: "SortProduct" };
+</script>
+
 <script setup>
 import { ref } from "vue";
 import { DownOutlined, UpOutlined } from "@ant-design/icons-vue";

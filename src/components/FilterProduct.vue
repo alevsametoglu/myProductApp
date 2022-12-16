@@ -1,3 +1,14 @@
+<script>
+/**
+ * filter Product component
+ * @vue-event { object} filter - filter product
+ *
+ *
+ *
+ */
+export default { name: "FilterProduct" };
+</script>
+
 <script setup>
 import Api from "../Api";
 import { onMounted, ref } from "vue";
